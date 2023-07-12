@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="icon" type="images/x-icon" href="./images/sampleApp.png">
+    <style>
+      * {
+  box-sizing: border-box;
+}
+
+      table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  margin-left: 5%;
+  width: 90%;
+}
+
+td, th {
+  border: 1px solid #160101;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #882f2f;
+}
+
+img{
+  border: 3px solid rgb(0, 0, 12);
+}
+.city {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  padding: 0;
+  background-image: url("images/sampleApp.png");
+  width: 100%;
+}
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 40%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+article1{
+  float: left;
+  padding: 20px;
+  width: 30%;
+  background-color: #acb0cc;
+  height: 300px;
+}
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+    </style>
+</head>
+<body> 
+  <script src="./script.js"></script>
+  <img src="./Image/profilePhoto.jpg" alt="Profile Photo" width="125" height="150">
+  <h1 style="font-family: 'Times New Roman', Times, serif;,">Aswin Seshanth</h1><hr>
+  <a href="https://www.amazon.com" target="_blank">Visit Store</a>
+  <br><button onclick="document.location='https://www.Amazon.com'">amazon</button>
+  <br>
+  <br>
+  <table>
+    <tr>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+      <td>Jesperapps</td>
+      <td>Taran</td>
+      <td>India</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+    <tr>
+      <td>Ernst Handel</td>
+      <td>Roland Mendel</td>
+      <td>Austria</td>
+    </tr>
+  </table>
+    <h2>Employees : </h2>
+    <ul style="list-style-type:unset;">
+     <li><strong style="color:red;">Vivek</strong></li>
+     <li>Vijay</li>
+     <li><mark>Mani</mark></li>
+    </ul>
+      <section>
+        <div class="city">
+          <h1>Mani</h1>
+          <p style="color: #d91a1a;"> good <span style="border: 1px solid coral; color: rgb(224, 136, 30);background-color: aquamarine;">soul</span></p>
+        </div><br>
+        <iframe src="https://getbootstrap.com/docs/5.3/layout/grid/" width="100%" height="300" style="border: 2px solid black;" title="description" >
+        </iframe>
+      </section>
+      <p id="go">amazon.com</p>
+      <script>
+       document.getElementById("go").innerHTML="Hello";
+      </script>
+      <button type="button" style="color: red; background-color: black;" onclick="mybutton()">Click Here</button>
+       <p id="main">This is a demo.</p>
+      <script>
+       function mybutton(){
+       document.getElementById("main").innerHTML="Hi!";
+       }
+      </script>
+      <style>
+       body{background-color: paleturquoise;}
+       h1{color:black;}
+       p{color: blueviolet;}
+      </style>
+      <section>
+        <nav>
+          <ul>
+            <li><a href="#">London</a></li>
+            <li><a href="#">Paris</a></li>
+            <li><a href="#">Tokyo</a></li>
+          </ul>
+        </nav>
+        
+        <article>
+          <h1>London</h1>
+          <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+          <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+        </article>
+        <article1>
+          <h1>Parris</h1>
+          <p>Paris is a beautiful city.</p>
+          <p>Paris is also known as <strong style="color: darkblue;">"CITY OF PARADISE"</strong><div class=""></div></p>
+        </article1>
+      </section>
+      <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+      </form>
+      <button onclick="window.print()">Print this page</button> 
+  </body>
+</html>

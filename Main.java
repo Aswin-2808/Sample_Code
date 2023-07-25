@@ -28,8 +28,18 @@ public class Main {
             System.out.println("Eligible");
         }
     }
-
+public static void myMethod2(){
+int a=20,b=30,c=a+b;
+System.out.println("Total is :"+c);
+}
     public static void main(String[] args) {
-        myMethod(25);
+        //myMethod(25);
+     Main meth = new Main();
+	meth.myMethod2();
+
     }
 }
+
+
+
+
